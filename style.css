@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Content before animation */
+.intro {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+    This controls how much scrolling is available
+    for the animation.
+
+    Increase this value for a slower animation.
+*/
+.scroll-animation {
+    height: 500vh;
+    position: relative;
+}
+
+/* Canvas stays on screen while scrolling */
+canvas {
+    position: sticky;
+    top: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    display: block;
+}
+
+/* Content after animation */
+.outro {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
